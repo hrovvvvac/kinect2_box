@@ -1,0 +1,191 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\antokhio\Desktop\kinect-magazin\Skeleton2d (Kinect2 Helper) help.v4p" scrollx="15" scrolly="-360">
+   <BOUNDS type="Window" left="8325" top="1260" width="9000" height="11970">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Skeleton2d (Kinect2 Helper)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="Skeleton2d (Kinect2 Helper)" componentmode="InAWindow" id="0" systemname="Skeleton2d (Kinect2 Helper)" filename="Skeleton2d (Kinect2 Helper).v4p">
+   <BOUNDS type="Node" left="4185" top="5430" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4185" top="5430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="InputXY" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE id="7" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4725" top="3720" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4725" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-1,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <NODE id="6" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4500" top="3210" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4500" top="3210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1920,1080">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4170" top="4575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source Minimum" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Source Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="Destination Maximum" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="50" values="1125.9736,622.958923339844,1117.0302734375,487.499328613281,1108.71252441406,361.036407470703,1084.5390625,306.541076660156,1039.60144042969,389.256530761719,955.158386230469,394.436614990234,850.667541503906,367.539520263672,813.237670898438,351.860900878906,1178.64855957031,386.574401855469,1269.87280273438,417.169921875,1352.2197265625,431.322998046875,1386.11315917969,434.621826171875,1095.71252441406,624.656005859375,1078.47375488281,786.395324707031,1064.37158203125,942.35693359375,1056.77099609375,1005.05139160156,1157.26342773438,621.204162597656,1183.3134765625,781.837585449219,1192.80810546875,923.306701660156,1207.2109375,982.444580078125,1110.72692871094,391.868988037109,787.157104492188,339.027221679687,815.381286621094,334.999084472656,1411.87487792969,438.829956054687,1377.05310058594,422.259033203125">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Destination Minimum">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Source Maximum">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="1575" top="1965" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1575" top="1965" width="900" height="300">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="50" values="1125.9736,622.958923339844,1117.0302734375,487.499328613281,1108.71252441406,361.036407470703,1084.5390625,306.541076660156,1039.60144042969,389.256530761719,955.158386230469,394.436614990234,850.667541503906,367.539520263672,813.237670898438,351.860900878906,1178.64855957031,386.574401855469,1269.87280273438,417.169921875,1352.2197265625,431.322998046875,1386.11315917969,434.621826171875,1095.71252441406,624.656005859375,1078.47375488281,786.395324707031,1064.37158203125,942.35693359375,1056.77099609375,1005.05139160156,1157.26342773438,621.204162597656,1183.3134765625,781.837585449219,1192.80810546875,923.306701660156,1207.2109375,982.444580078125,1110.72692871094,391.868988037109,787.157104492188,339.027221679687,815.381286621094,334.999084472656,1411.87487792969,438.829956054687,1377.05310058594,422.259033203125">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="InputXY">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="8">
+   <BOUNDS type="Node" left="4005" top="6240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4005" top="6240" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18870" top="975" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer Out" dstnodeid="8" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5565" top="3735" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5565" top="3735" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1,-1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Destination Maximum">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1995" top="3555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="100" values="-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,-48.78,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="2625" top="1305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1920">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="2610" top="1950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Select (Value Vector)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="2640" top="2730" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="XY" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="12" dstpinname="X">
+   </LINK>
+   </PATCH>
