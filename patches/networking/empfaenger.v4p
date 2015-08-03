@@ -1,0 +1,49 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="X:\meso\kinect2_box\patches\networking\empfaenger.v4p" systemname="empfaenger" filename="X:\meso\kinect2_box\patches\networking\empfaenger.v4p">
+   <BOUNDS type="Window" left="18765" top="7770" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="UDP (Network Server)" nodename="UDP (Network Server)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1710" top="2235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Local Port" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1890" top="1155" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1890" top="1155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5555">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Local Port">
+   </LINK>
+   <NODE systemname="AsValue (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsValue (Raw)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1695" top="2955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Skeleton3d (Kinect2 Helper) help" filename="Skeleton (Kinect Helper)\Skeleton3d (Kinect2 Helper) help.v4p" nodename="C:\Users\Alex\v4\kinect\patches\Skeleton (Kinect Helper)\Skeleton3d (Kinect2 Helper) help.v4p" componentmode="InAWindow" id="3">
+   <BOUNDS type="Node" left="4485" top="4815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="75" values="-0.145955190062523,-0.319850414991379,1.69510495662689,-0.147475346922874,-0.0499287508428097,1.70528423786163,-0.147502020001411,0.211289018392563,1.70364379882813,-0.138625279068947,0.352994799613953,1.67918300628662,-0.279765725135803,0.10004349052906,1.67737185955048,-0.321260154247284,-0.108318835496902,1.68603265285492,-0.292693078517914,-0.308985680341721,1.60018002986908,-0.275502860546112,-0.34787455201149,1.60418164730072,0.00129021483007818,0.110979706048965,1.71289825439453,0.00498569663614035,-0.119719058275223,1.72125053405762,-0.00940766744315624,-0.320635259151459,1.63341224193573,-0.0243977215141058,-0.364005446434021,1.6353679895401,-0.203709080815315,-0.313587844371796,1.65652358531952,-0.232801005244255,-0.547101020812988,1.63961827754974,-0.24584025144577,-0.785190939903259,1.69800853729248,-0.232944890856743,-0.811708331108093,1.58441638946533,-0.0827303528785706,-0.314548790454865,1.67234945297241,-0.0844130739569664,-0.553160965442657,1.67793011665344,-0.0834746584296227,-0.788960039615631,1.74836874008179,-0.0732306838035583,-0.815636575222015,1.63444948196411,-0.147696569561958,0.147156998515129,1.7060934305191,-0.248756244778633,-0.387073665857315,1.58354353904724,-0.242398709058762,-0.327075362205505,1.56811773777008,-0.0362212210893631,-0.442459881305695,1.6207959651947,-0.0504856333136559,-0.351272791624069,1.59195637702942">
+   </PIN>
+   <BOUNDS type="Window" left="12105" top="915" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   </PATCH>
